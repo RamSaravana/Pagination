@@ -1,0 +1,62 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4vh;
+    font-family:monospace;
+    text-align: center;
+}
+
+.user-form{
+    background-color: hsla(34, 57%, 70%,0.50) ;
+    border: 2px solid black;
+    width:fit-content;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+#userElement {
+    margin: auto;
+    padding: 0;
+    background: linear-gradient(225deg, rgba(34,193,195,0.9) 0%, rgba(253,187,45,0.9) 100%);
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: inline;
+}
+
+.form-input{
+    padding: 5px;
+    margin: 4px;
+}
+
+.users_per_page{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.pagination{
+    text-align: center;
+    padding: 20px;
+}
+
+.pages{
+    font-size: 20px;
+    height: 40px;
+    width: 50px;
+    border-radius: 30%;
+}
+
+.attribution{
+    font-size: small;
+    text-align: center;
+    position:bottom;
+}
+

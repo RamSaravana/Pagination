@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Profile Pagination with CRUD</title>
+</head>
+
+<body>
+    <h1 class="heading">USER PROFILE DATA</h1>
+    <div class="input">
+        <form class="user-form">
+            <label>Name</label>
+            <input class="form-input" autocomplete="off" type="text" placeholder="First Name" id="firstName">
+            <input class="form-input" autocomplete="off" type="text" placeholder="Last Name" id="lastName"><br>
+            <label>Gender</label>
+            <input class="form-input" type="text" placeholder="Male / Female" id="gender"><br>
+            <label>City</label>
+            <input class="form-input" type="text" placeholder="Residing City" id="city"><br>
+            <label>Country</label>
+            <input class="form-input" type="text" placeholder="Country Name" id="country">
+            <label>Email Address</label>
+            <input class="form-input" autocomplete="email" type="email" placeholder="Enter Valid Email-ID" id="email">
+            <button class="form-input submit-button" onclick="submitUser()">Submit</button><br>
+            <sup>*Please fill all the details</sup>
+        </form>
+        <div class="users_per_page">
+            <label>View Users per page <input type="number" placeholder="5 / 10 /..." min="1" max="200"
+                    id="perPage" accept="number"><button onclick="showPerPage()">OK</button> / </label>
+            <button onclick="refreshShowLast()"> See Last User</button> /
+            <button onclick="refeshShowAll()">Refresh</button>
+        </div>
+    </div>
+    <div class="users"></div>
+    <div class="pagination">
+        <button class="pages" id="first"></button>
+        <button class="pages" id="p1"></button>
+        <button class="pages" id="p2"></button>
+        <button class="pages" id="p3"></button>
+        <button class="pages" id="p4"></button>
+        <button class="pages" id="p5"></button>
+        <button class="pages" id="last"></button>
+    </div>
+    <div class="attribution">© Coded by <a href="https://www.linkedin.com/in/ramsaravanaraja/"
+            title="RamSaravana_Linkedin_Profile" target="_blank">RamSaravanaRaja</a></div>
+    <script type="text/javascript" src="mock_data.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
