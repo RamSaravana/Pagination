@@ -1,12 +1,17 @@
 
 //Pagination functions required
-let count =document.querySelector("#perPage").getAttribute("value");
+let first = users[0];
+let totalUsers = users.length;
+let last = users[totalUsers-1];
+// let totalPages = 
 
-function showPerPage() {
-    console.log(count);
+function showPerPage(num) {
+    console.log(num);
 }
 
-// function activePage()
+// function activePage(){
+
+// }
 
 // function lastPage()
 
@@ -40,17 +45,38 @@ function getUsers() {
     // .then(users => console.log(users));
     // .then((users) => {
         users.forEach((user) => boxed(user));
-
 return users;
 };
 
 getUsers();
 
-function addUser(){
+// function addUser()
 
-}
-
-// function submitUser()
+function submitUser() {
+    let fname = document.getElementById(firstName).value;
+    let lname = document.getElementById(lastName).value;
+    let gnd = document.getElementById(gender).value;
+    let mail = document.getElementById(email).value;
+    let cty = document.getElementById(city).value;
+    let contry = document.getElementById(country).value;
+    users.push()=`{
+        "id": ${users.length+1},
+        "first_name": ${fname},
+        "last_name": ${lname},
+        "email": ${mail},
+        "gender": ${gnd},
+        "address": {
+            "city": ${cty},
+            "state": null,
+            "country": ${contry},
+            "pin_code": null
+        }
+    },`;
+    // console.log("good");
+    //to show the previous last and newly added object 
+    boxed(users[users.length-2]);
+    refreshShowLast();
+};
 
 // function deleteUser()
 
@@ -65,6 +91,5 @@ function refeshShowAll(){
 
 function refreshShowLast(){
     allUsers.innerHTML="";
-    let last = users[users.length-1];
     boxed(last);
 }

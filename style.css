@@ -11,6 +11,12 @@ h1{
     text-align: center;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
 .user-form{
     background-color: hsla(34, 57%, 70%,0.50) ;
     border: 2px solid black;
@@ -48,7 +54,7 @@ h1{
 }
 
 .pages{
-    font-size: 20px;
+    font-size: 15px;
     height: 40px;
     width: 50px;
     border-radius: 30%;

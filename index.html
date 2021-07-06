@@ -28,24 +28,25 @@
             <sup>*Please fill all the details</sup>
         </form>
         <div class="users_per_page">
-            <label>View Users per page <input type="number" placeholder="5 / 10 /..." min="1" max="200"
-                    id="perPage" accept="number"><button onclick="showPerPage()">OK</button> / </label>
+            <label>View Users per page <button onclick="showPerPage(10)">10</button><button onclick="showPerPage(25)">25</button><button onclick="showPerPage(50)">50</button> / </label>
             <button onclick="refreshShowLast()"> See Last User</button> /
             <button onclick="refeshShowAll()">Refresh</button>
         </div>
     </div>
     <div class="users"></div>
     <div class="pagination">
-        <button class="pages" id="first"></button>
-        <button class="pages" id="p1"></button>
-        <button class="pages" id="p2"></button>
-        <button class="pages" id="p3"></button>
-        <button class="pages" id="p4"></button>
-        <button class="pages" id="p5"></button>
-        <button class="pages" id="last"></button>
+        <button class="pages" id="first" onclick="firstPage()">First</button>
+        <button class="pages" id="p1" onclick="">Prev</button>
+        <button class="pages" id="p2" onclick=""></button>
+        <button class="pages" id="p3" onclick=""></button>
+        <button class="pages" id="p4" onclick=""></button>
+        <button class="pages" id="p5" onclick=""></button>
+        <button class="pages" id="p6" onclick=""></button>
+        <button class="pages" id="p7" onclick="">Next</button>
+        <button class="pages" id="last" onclick="lastPage()">Last</button>
     </div>
-    <div class="attribution">© Coded by <a href="https://www.linkedin.com/in/ramsaravanaraja/"
-            title="RamSaravana_Linkedin_Profile" target="_blank">RamSaravanaRaja</a></div>
+    <!-- <div class="attribution">© Coded by <a href="https://www.linkedin.com/in/ramsaravanaraja/"
+            title="RamSaravana_Linkedin_Profile" target="_blank">RamSaravanaRaja</a></div> -->
     <script type="text/javascript" src="mock_data.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
